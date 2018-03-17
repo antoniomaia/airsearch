@@ -1,0 +1,32 @@
+body{
+    font-family: "Raleway", sans-serif;
+    line-height: 1.7;
+    color: #818181;
+}
+.navbar{
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 0;
+}
+.navbar-brand{
+    padding: 0px;
+    height: 80px;
+}
+.navbar-brand > img{
+    padding: 10px 10px;
+    width: auto;
+    height: 100%; 
+}
+
+.jumbotron{
+    
+    text-align: center;
+    background-color: #f4511e;
+    color: #ffffff;
+    padding: 100px 25px;
+
+}
