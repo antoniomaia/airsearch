@@ -1,0 +1,45 @@
+<!-- Navigation-bar section -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Nezasa Logo" src="https://d18k51ywi97rok.cloudfront.net/assets/images/company-icons/83669439d17a08fb17012b063f51e82b-nezasa_logo_red_250x173.png">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Application section to search for airports based on user chosen criteria -->
+<div class="jumbotron">
+    <h1>Welcome to AirSearch</h1>
+    <p>We hope you find exactly the airport you're looking for.</p>
+
+    <form class="form-inline">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Name
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Name</a>
+                        </li>
+                        <li>
+                            <a href="#">City</a>
+                        </li>
+                        <li>
+                            <a href="#">IATA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="search" class="form-control" size="50" placeholder="Search By" required>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-danger">Go!</button>
+            </div>
+        </div>
+    </form>
+</div>
