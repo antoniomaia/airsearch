@@ -1,3 +1,19 @@
 {{outlet}}
 
-<h1>Airports in here</h1>
+{{#each airports as |airport|}}
+    <article class="listing">
+        <h3>{{airport.label}}</h3>
+        <div class="detail country">
+            <span>Country:</span> {{airport.airport.country}}
+        </div>
+        <div class="detail timeZoneId">
+            <span>TimeZone:</span> {{airport.airport.timeZoneId}}
+        </div>
+        <div class="detail iata">
+            <span>IATA Code:</span> {{airport.airport.iataCode}}
+        </div>   
+        <div class="detail iata">
+            <span>City:</span> {{airport.airport.city.texts.en}}
+        </div>      
+    </article>
+{{/each}}
