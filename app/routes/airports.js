@@ -1,4 +1,5 @@
 import Route from '@ember/routing/route';
+import { set } from '@ember/object';
 
 export default Route.extend({
     model() {
@@ -6,6 +7,6 @@ export default Route.extend({
     },
 
     setupController(controller, model) {
-        Ember.set(controller, 'airports', model);
+        set(controller, 'airports', model);
     }
 });

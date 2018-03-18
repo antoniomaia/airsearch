@@ -1,19 +1,22 @@
 {{outlet}}
 
-{{#each airports as |airport|}}
-    <article class="listing">
-        <h3>{{airport.label}}</h3>
-        <div class="detail country">
-            <span>Country:</span> {{airport.airport.country}}
-        </div>
-        <div class="detail timeZoneId">
-            <span>TimeZone:</span> {{airport.airport.timeZoneId}}
-        </div>
-        <div class="detail iata">
-            <span>IATA Code:</span> {{airport.airport.iataCode}}
-        </div>   
-        <div class="detail iata">
-            <span>City:</span> {{airport.airport.city.texts.en}}
-        </div>      
-    </article>
-{{/each}}
+<div class="container">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">City</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each airports as |airport|}}
+            <tr>
+                <th scope="row">{{airport.id}}</th>
+                <td>{{airport.label}}</td>
+                <td>{{airport.airport.city.texts.en}}, {{airport.airport.country}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

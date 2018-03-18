@@ -1,5 +1,5 @@
 <!-- Navigation-bar section -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar fixed-top">
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="/">
@@ -10,38 +10,30 @@
 </nav>
 
 <!-- Application section to search for airports based on user chosen criteria -->
-<div class="jumbotron">
-    <h1>Welcome to AirSearch</h1>
-    <p>We hope you find exactly the airport you're looking for.</p>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Welcome to AirSearch</h1>
+        <p class="lead">We hope you find exactly the airport you're looking for.</p>
 
-    <form class="form-inline">
-        <div class="input-group">
-            <div class="input-group-btn">
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Name
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#">Name</a>
-                        </li>
-                        <li>
-                            <a href="#">City</a>
-                        </li>
-                        <li>
-                            <a href="#">IATA</a>
-                        </li>
-                    </ul>
+        <form class="form-inline">
+            <div class="btn-group">
+                <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Name
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Name</a>
+                    <a class="dropdown-item" href="#">City</a>
+                    <a class="dropdown-item" href="#">IATA</a>
                 </div>
             </div>
-        </div>
-        <div class="input-group">
-            <input type="search" class="form-control" size="50" placeholder="Search By" required>
-            <div class="input-group-btn">
-                {{#link-to "airports" class="btn btn-danger"}}
-                    Go!
-                {{/link-to}}
+            <div class="input-group">
+                <input type="search" class="form-control" size="50" placeholder="Search By" required>
+                <div class="input-group-btn">
+                    {{#link-to "airports" class="btn btn-danger btn-lg"}} Go! {{/link-to}}
+                </div>
             </div>
-        </div>
-    </form>
+        </form>
+
+    </div>
 </div>
+

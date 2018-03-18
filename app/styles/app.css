@@ -2,6 +2,7 @@ body{
     font-family: "Raleway", sans-serif;
     line-height: 1.7;
     color: #818181;
+    overflow-y: scroll; 
 }
 .navbar{
     margin-bottom: 0;
@@ -9,7 +10,7 @@ body{
     z-index: 9999;
     border: 0;
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 1.7;
     border-radius: 0;
 }
 .navbar-brand{
@@ -26,4 +27,11 @@ body{
     background-color: #f4511e;
     color: #ffffff;
     padding: 100px 25px;
+}
+form{
+    justify-content: center;
+}
+.btn-info {
+    background-color:transparent;
+    border: none;
 }
