@@ -27,13 +27,12 @@
                 </div>
             </div>
             <div class="input-group">
-                <input type="search" class="form-control" size="50" placeholder="Search By" required>
+                {{input type="text" value=inputSearch class="form-control" size="50" placeholder="Search By"}}
                 <div class="input-group-btn">
-                    {{#link-to "airports" class="btn btn-danger btn-lg"}} Go! {{/link-to}}
+                    {{#link-to "airports" (query-params query=inputSearch) class="btn btn-danger btn-lg"}} Go! {{/link-to}}
                 </div>
             </div>
         </form>
 
     </div>
 </div>
-

@@ -7,4 +7,3 @@ export default DS.Model.extend({
     coordinateLat: DS.attr(),
     coordinateLng: DS.attr()
 });
-
