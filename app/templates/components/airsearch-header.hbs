@@ -19,7 +19,7 @@
             <div class="input-group">
                 {{input type="text" value=inputSearch class="form-control" size="50" placeholder="Search By"}}
                 <div class="input-group-btn">
-                    {{#link-to "airports" (query-params query=inputSearch) class="btn btn-danger btn-lg"}} Go! {{/link-to}}
+                    {{#link-to "airports" (query-params query=inputSearch) class="btn btn-danger btn-lg" id="goBtn"}} Go! {{/link-to}}
                 </div>
             </div>
         </form>
