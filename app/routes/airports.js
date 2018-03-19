@@ -9,6 +9,7 @@ export default Route.extend({
     },
     
     model(params) {
+        params.query = params.query || '';
         return this.get('store').query('airport', params);
     },
 
