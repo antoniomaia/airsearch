@@ -1,6 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-    label: DS.attr(),
-    airport: DS.attr()
+    name: DS.attr(),
+    city: DS.attr(),
+    country: DS.attr(),
+    coordinateLat: DS.attr(),
+    coordinateLng: DS.attr()
 });
+

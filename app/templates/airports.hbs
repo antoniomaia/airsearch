@@ -7,14 +7,16 @@
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
                 <th scope="col">City</th>
+                <th scope="col">Coordinate</th>
             </tr>
         </thead>
         <tbody>
             {{#each airports as |airport|}}
             <tr>
                 <th scope="row">{{airport.id}}</th>
-                <td>{{airport.label}}</td>
-                <td>{{airport.airport.city.texts.en}}, {{airport.airport.country}}</td>
+                <td>{{airport.name}}</td>
+                <td>{{airport.city}}, {{airport.country}}</td>
+                <td>{{airport.coordinateLat}}, {{airport.coordinateLng}}</td>
             </tr>
             {{/each}}
         </tbody>
